@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f9f9ff;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'surface-container': '#e7eeff', 'surface-variant': '#d8e3fb', 'on-secondary': '#ffffff', 'inverse-on-surface': '#ecf1ff', 'tertiary-container': '#ac3d00', 'inverse-surface': '#263143', 'surface-tint': '#1554d4', 'surface-container-low': '#f0f3ff', 'on-primary-fixed-variant': '#003da9', 'on-tertiary-fixed-variant': '#7f2b00', 'on-primary-container': '#d5ddff', 'inverse-primary': '#b4c5ff', 'on-background': '#111c2d', 'surface-container-highest': '#d8e3fb', 'on-tertiary-container': '#ffd5c6', 'on-error': '#ffffff', 'secondary-fixed-dim': '#b0c9e8', 'on-surface-variant': '#434654', 'error': '#ba1a1a', 'surface-bright': '#f9f9ff', 'on-error-container': '#93000a', 'on-secondary-container': '#4b637e', 'on-secondary-fixed': '#011d35', 'primary-fixed-dim': '#b4c5ff', 'on-primary': '#ffffff', 'error-container': '#ffdad6', 'background': '#f9f9ff', 'outline-variant': '#c3c6d7', 'primary': '#0041b0', 'on-surface': '#111c2d', 'tertiary-fixed': '#ffdbce', 'primary-container': '#1d58d8', 'on-secondary-fixed-variant': '#314863', 'surface': '#f9f9ff', 'on-tertiary-fixed': '#370e00', 'tertiary': '#842d00', 'surface-container-high': '#dee8ff', 'tertiary-fixed-dim': '#ffb599', 'on-tertiary': '#ffffff', 'outline': '#737686', 'secondary-fixed': '#d1e4ff', 'surface-container-lowest': '#ffffff', 'surface-dim': '#cfdaf2', 'secondary-container': '#c7dfff', 'primary-fixed': '#dbe1ff', 'secondary': '#49607c', 'on-primary-fixed': '#00174b' }, borderRadius: { 'DEFAULT': '0.125rem', 'lg': '0.25rem', 'xl': '0.5rem', 'full': '0.75rem' }, spacing: { 'gutter': '1.5rem', 'space-md': '1rem', 'space-xs': '0.25rem', 'space-lg': '1.5rem', 'gutter-sm': '1rem', 'margin-mobile': '1rem', 'space-sm': '0.5rem', 'gutter-lg': '2rem', 'margin': '2rem', 'space-xl': '2.5rem' }, fontFamily: { 'display-lg-mobile': ['Plus Jakarta Sans'], 'code-mono': ['JetBrains Mono'], 'body-md': ['Inter'], 'body-sm': ['Inter'], 'label-md': ['Inter'], 'headline-lg': ['Plus Jakarta Sans'], 'label-lg': ['Inter'], 'headline-md': ['Plus Jakarta Sans'], 'display-lg': ['Plus Jakarta Sans'], 'label-sm': ['Inter'], 'headline-lg-mobile': ['Plus Jakarta Sans'], 'academic-preview': ['EB Garamond'], 'headline-sm': ['Plus Jakarta Sans'], 'body-lg': ['Inter'] }, fontSize: { 'display-lg-mobile': ['28px', { lineHeight: '36px', letterSpacing: '-0.02em', fontWeight: '700' }], 'code-mono': ['12px', { lineHeight: '18px', fontWeight: '400' }], 'body-md': ['14px', { lineHeight: '22px', fontWeight: '400' }], 'body-sm': ['13px', { lineHeight: '20px', fontWeight: '400' }], 'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.01em', fontWeight: '500' }], 'headline-lg': ['30px', { lineHeight: '38px', letterSpacing: '-0.02em', fontWeight: '600' }], 'label-lg': ['14px', { lineHeight: '20px', fontWeight: '500' }], 'headline-md': ['22px', { lineHeight: '30px', letterSpacing: '-0.015em', fontWeight: '600' }], 'display-lg': ['36px', { lineHeight: '44px', letterSpacing: '-0.025em', fontWeight: '700' }], 'label-sm': ['11px', { lineHeight: '14px', letterSpacing: '0.025em', fontWeight: '600' }], 'headline-lg-mobile': ['24px', { lineHeight: '32px', letterSpacing: '-0.015em', fontWeight: '600' }], 'academic-preview': ['16px', { lineHeight: '24px', fontWeight: '400' }], 'headline-sm': ['18px', { lineHeight: '26px', letterSpacing: '-0.01em', fontWeight: '600' }], 'body-lg': ['16px', { lineHeight: '26px', fontWeight: '400' }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] pt-safe"><div class="h-16 px-space-sm flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs min-w-0"><button aria-label="Voltar" class="w-11 h-11 flex items-center justify-center rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><div class="flex items-center gap-space-sm min-w-0"><img alt="Logo ABNT Fácil" class="h-7 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf0OnbCzxfHUJTHjcvVlSIoDNlKaddct_hypnuihl1hbvzb_v2IpuDnnMN0BmEeJ6G-svWqUF8kZWuWyK4Aa54bdMUvAClOIOaxTe2QZiIStM2SQBoKXhU7TmvWovBEtGtQ9mTeflJRh7utiAtXMftYRCqPLzLEEUe3PAv8avLU9b-Lalzpx8u5MAKlCqDttpHUjEYSPI2FHST31stOMHi4eFv4Xh_Olqb5fhWWcEc74isruX2CnW4"/><h1 class="font-headline-sm text-headline-sm text-on-surface truncate font-semibold">Pré Visualização E Exportação Pdf</h1></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Ações do Documento" class="w-11 h-11 flex items-center justify-center rounded-xl text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-[22px]">more_vert</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCi6RRvgY3SnChrmTcREUzw_FihfmiEvfjCMA0EyBxR53pN87fXeqRA48uy-iuOLTMvWQnTtIMzLPebVaQTtdQMpC_XIpkqhXo2PPMgQgT4glEb2YwftmvtYS1XCv_F5A2X9Fth6ZvpyYQBOP1PWe_teWJr4092SrfKBsZSaklwAl0spEHmQWQsMaHdmYIBKnnniP4zdHag01cvD_jlT8M2oyo0TADhuri6zSN0gmylQ9lLQ6jYv78"/></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full px-margin-mobile pb-28 gap-space-md">
+<!-- Document Header Status Card -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">picture_as_pdf</span>
+</div>
+<div class="min-w-0 flex-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Dissertação_Final_USP_ABNT.pdf</h2>
+<p class="font-label-sm text-label-sm text-secondary truncate">USP • Programa de Pós-Graduação em Ciência da Computação</p>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded-lg bg-emerald-50 text-emerald-800 font-label-sm text-label-sm flex items-center gap-1 flex-shrink-0">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+        100% Validado
+      </span>
+</div>
+<!-- Metadata Pill Grid -->
+<div class="flex items-center flex-wrap gap-2 pt-space-xs text-on-surface-variant font-label-md text-label-md">
+<div class="flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[16px] text-secondary">storage</span>
+<span>4.2 MB</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[16px] text-secondary">auto_stories</span>
+<span>84 Páginas</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[16px] text-secondary">schedule</span>
+<span>Compilado agora</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded text-primary">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>NBR 14724:2024</span>
+</div>
+</div>
+</div>
+<!-- Academic Page Interactive Preview Stage -->
+<div class="w-full flex flex-col bg-surface-container-lowest rounded-xl shadow-sm p-space-md gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]">preview</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Pré-visualização ABNT</span>
+</div>
+<!-- Zoom Controls -->
+<div class="flex items-center bg-surface-container-low rounded-lg p-0.5">
+<button aria-label="Diminuir Zoom" class="w-7 h-7 flex items-center justify-center text-on-surface-variant hover:text-on-surface" id="btn-zoom-out">
+<span class="material-symbols-outlined text-[16px]">zoom_out</span>
+</button>
+<span class="font-code-mono text-code-mono text-on-surface px-1.5" id="zoom-label">85%</span>
+<button aria-label="Aumentar Zoom" class="w-7 h-7 flex items-center justify-center text-on-surface-variant hover:text-on-surface" id="btn-zoom-in">
+<span class="material-symbols-outlined text-[16px]">zoom_in</span>
+</button>
+</div>
+</div>
+<!-- View Mode Tabs -->
+<div class="flex items-center gap-1 bg-surface-container-low p-1 rounded-lg">
+<button class="flex-1 py-1 px-2 text-center rounded-lg bg-surface-container-lowest font-label-md text-label-md text-primary shadow-sm font-semibold transition-all" id="tab-0" onclick="switchTab(0)">
+        Capa
+      </button>
+<button class="flex-1 py-1 px-2 text-center rounded-lg text-secondary font-label-md text-label-md hover:text-on-surface transition-all" id="tab-1" onclick="switchTab(1)">
+        Folha de Rosto
+      </button>
+<button class="flex-1 py-1 px-2 text-center rounded-lg text-secondary font-label-md text-label-md hover:text-on-surface transition-all" id="tab-2" onclick="switchTab(2)">
+        Sumário
+      </button>
+<button class="flex-1 py-1 px-2 text-center rounded-lg text-secondary font-label-md text-label-md hover:text-on-surface transition-all" id="tab-3" onclick="switchTab(3)">
+        Corpo (Texto)
+      </button>
+</div>
+<!-- Canvas Simulator Stage -->
+<div class="relative w-full bg-surface-container-high rounded-xl p-3 flex flex-col items-center justify-center overflow-hidden min-h-[360px]">
+<!-- Safe Margin Reference Guideline Annotations -->
+<div class="w-full flex items-center justify-between text-secondary font-code-mono text-[10px] px-2 mb-1">
+<span class="flex items-center gap-1"><span class="w-2 h-0.5 bg-primary/40 inline-block"></span> Margem Sup: 3cm / Esq: 3cm</span>
+<span class="flex items-center gap-1"><span class="w-2 h-0.5 bg-primary/40 inline-block"></span> Margem Inf: 2cm / Dir: 2cm</span>
+</div>
+<!-- Scaled Document Sheet -->
+<div class="relative w-full max-w-[270px] aspect-[1/1.414] bg-surface-container-lowest rounded-lg shadow-md p-4 flex flex-col justify-between text-on-surface transition-all duration-300" id="preview-sheet">
+<!-- Sheet Page Dynamic Content -->
+<div class="flex flex-col h-full justify-between text-center select-none" id="sheet-content-0">
+<div class="flex flex-col gap-1">
+<span class="font-academic-preview text-[10px] font-semibold tracking-wider uppercase text-on-surface">UNIVERSIDADE DE SÃO PAULO</span>
+<span class="font-academic-preview text-[8px] text-secondary">FACULDADE DE FILOSOFIA, CIÊNCIAS E LETRAS</span>
+</div>
+<div class="my-auto flex flex-col gap-2">
+<p class="font-academic-preview text-[11px] font-bold uppercase text-on-surface tracking-wide leading-tight">
+              OTIMIZAÇÃO DE PIPELINES COMPUTACIONAIS SOB PROTOCOLOS DISTRIBUÍDOS
+            </p>
+<p class="font-academic-preview text-[9px] text-secondary font-medium">
+              LUCAS ALBUQUERQUE MARTINS
+            </p>
+</div>
+<div class="flex flex-col text-[8px] font-academic-preview text-secondary uppercase">
+<span>SÃO PAULO</span>
+<span>2025</span>
+</div>
+</div>
+<div class="hidden flex flex-col h-full justify-between text-left select-none" id="sheet-content-1">
+<p class="text-center font-academic-preview text-[9px] uppercase font-semibold text-on-surface">LUCAS ALBUQUERQUE MARTINS</p>
+<div class="my-auto flex flex-col gap-2">
+<p class="text-center font-academic-preview text-[10px] font-bold uppercase text-on-surface">OTIMIZAÇÃO DE PIPELINES COMPUTACIONAIS SOB PROTOCOLOS DISTRIBUÍDOS</p>
+<div class="ml-auto w-3/5 text-[7px] font-academic-preview text-on-surface-variant leading-tight">
+              Dissertação apresentada ao Programa de Pós-Graduação da USP como requisito parcial para obtenção do título de Mestre em Ciências.
+              <br/><br/>
+<strong>Orientador:</strong> Prof. Dr. Carlos E. Valente
+            </div>
+</div>
+<div class="text-center text-[8px] font-academic-preview text-secondary uppercase">
+<span>SÃO PAULO<br/>2025</span>
+</div>
+</div>
+<div class="hidden flex flex-col h-full text-left select-none gap-2" id="sheet-content-2">
+<p class="text-center font-academic-preview text-[11px] font-bold uppercase text-on-surface">SUMÁRIO</p>
+<div class="flex flex-col gap-1.5 text-[8px] font-academic-preview text-on-surface">
+<div class="flex justify-between items-baseline border-b border-dotted border-outline-variant">
+<span class="font-bold">1 INTRODUÇÃO</span>
+<span class="font-code-mono">14</span>
+</div>
+<div class="flex justify-between items-baseline border-b border-dotted border-outline-variant pl-2">
+<span>1.1 Contextualização e Motivação</span>
+<span class="font-code-mono">16</span>
+</div>
+<div class="flex justify-between items-baseline border-b border-dotted border-outline-variant pl-2">
+<span>1.2 Objetivos Gerais e Específicos</span>
+<span class="font-code-mono">19</span>
+</div>
+<div class="flex justify-between items-baseline border-b border-dotted border-outline-variant">
+<span class="font-bold">2 REVISÃO SISTEMÁTICA</span>
+<span class="font-code-mono">23</span>
+</div>
+<div class="flex justify-between items-baseline border-b border-dotted border-outline-variant">
+<span class="font-bold">3 METODOLOGIA APLICADA</span>
+<span class="font-code-mono">42</span>
+</div>
+<div class="flex justify-between items-baseline border-b border-dotted border-outline-variant">
+<span class="font-bold">4 RESULTADOS E DISCUSSÕES</span>
+<span class="font-code-mono">61</span>
+</div>
+<div class="flex justify-between items-baseline border-b border-dotted border-outline-variant">
+<span class="font-bold">REFERÊNCIAS</span>
+<span class="font-code-mono">79</span>
+</div>
+</div>
+</div>
+<div class="hidden flex flex-col h-full text-left select-none justify-between" id="sheet-content-3">
+<div class="flex justify-end text-[7px] font-code-mono text-secondary">
+<span>15</span>
+</div>
+<div class="flex flex-col gap-1.5 text-[7.5px] font-academic-preview leading-relaxed text-on-surface text-justify indent-4">
+<p>
+              O avanço dos sistemas operacionais concorrentes impõe desafios contínuos à orquestração de cargas de trabalho intensivas em dados, exigindo conformidade rigorosa com normas epistemológicas vigentes (SILVA, 2023, p. 45).
+            </p>
+<p>
+              Conforme demonstrado nas análises empíricas preliminares, a segregação de threads heterogêneas mitiga a contenção de barramentos em até 38.4%, respaldando a hipótese norteadora.
+            </p>
+<div class="p-1.5 my-1 bg-surface-container-low rounded text-[6.5px] font-code-mono text-secondary">
+              Tabela 1 – Rendimento médio das rotinas de compilação assíncrona.
+            </div>
+</div>
+<div class="text-[7px] text-center font-academic-preview text-secondary">
+            Capítulo 1 • Fundamentação Teórica
+          </div>
+</div>
+<!-- Margin indicator watermark lines -->
+<div class="pointer-events-none absolute inset-x-3 top-3 bottom-2 rounded border border-primary/20 border-dashed"></div>
+</div>
+<!-- Quick Page Flip Navigator -->
+<div class="flex items-center gap-space-sm mt-3 bg-surface-container-lowest/90 backdrop-blur px-space-sm py-1 rounded-full shadow-sm">
+<button class="w-6 h-6 flex items-center justify-center text-on-surface-variant hover:text-on-surface" id="btn-prev-page">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<span class="font-label-md text-label-md text-on-surface font-medium min-w-[84px] text-center" id="page-counter-label">
+          Página 1 de 84
+        </span>
+<button class="w-6 h-6 flex items-center justify-center text-on-surface-variant hover:text-on-surface" id="btn-next-page">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Format Selection Module -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Formato de Exportação</span>
+<span class="font-label-sm text-label-sm text-secondary">Selecione uma opção</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Option 1: PDF/A (Selected) -->
+<label class="relative flex flex-col p-space-md rounded-xl bg-surface-container-lowest shadow-sm cursor-pointer transition-all">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="mt-0.5 text-primary">
+<input checked="" class="w-4 h-4 text-primary focus:ring-0 cursor-pointer" name="export-format" type="radio" value="pdfa"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">PDF/A (Padrão ABNT)</span>
+<span class="px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-[10px] font-semibold uppercase">Recomendado</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+                Exigido para entrega oficial e depósito em repositório institucional (USP, UNICAMP, UNESP, UFRJ, CAPES).
+              </p>
+</div>
+</div>
+</div>
+<!-- Sub-features included in PDF/A -->
+<div class="mt-space-sm pt-space-xs grid grid-cols-1 gap-1.5 bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-[16px]">done</span>
+<span>Sumário interativo com links internos de navegação</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-[16px]">done</span>
+<span>Metadados acadêmicos indexados (Título, Autor, Abstract)</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-[16px]">done</span>
+<span>Fontes vetoriais 100% incorporadas e subsetadas</span>
+</div>
+</div>
+</label>
+<!-- Option 2: DOCX -->
+<label class="relative flex flex-col p-space-md rounded-xl bg-surface-container-lowest shadow-sm cursor-pointer hover:bg-surface-container-low/50 transition-all">
+<div class="flex items-start gap-space-sm">
+<div class="mt-0.5 text-primary">
+<input class="w-4 h-4 text-primary focus:ring-0 cursor-pointer" name="export-format" type="radio" value="docx"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Microsoft Word (.DOCX)</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[10px]">Editável</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+              Estilos ABNT nativos prontos salvos no painel de Estilos Rápidos do Office para edições futuras.
+            </p>
+</div>
+</div>
+</label>
+<!-- Option 3: LaTeX -->
+<label class="relative flex flex-col p-space-md rounded-xl bg-surface-container-lowest shadow-sm cursor-pointer hover:bg-surface-container-low/50 transition-all">
+<div class="flex items-start gap-space-sm">
+<div class="mt-0.5 text-primary">
+<input class="w-4 h-4 text-primary focus:ring-0 cursor-pointer" name="export-format" type="radio" value="latex"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Arquivo LaTeX (.TEX + .BIB)</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[10px]">Científico</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+              Ideal para pesquisadores de exatas e engenharias. Pacote abnTeX2 com banco completo BibTeX.
+            </p>
+</div>
+</div>
+</label>
+</div>
+</div>
+<!-- Advanced Export Options (Toggles) -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col gap-space-sm">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Opções Avançadas da Compilação</span>
+<!-- Toggle 1 -->
+<div class="flex items-center justify-between gap-space-sm py-1">
+<div class="flex items-start gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">draw</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-medium text-on-surface">Folha de Aprovação com assinatura</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Espaço para assinaturas digitais da banca examinadora</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Toggle 2 -->
+<div class="flex items-center justify-between gap-space-sm py-1">
+<div class="flex items-start gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">menu_book</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-medium text-on-surface">Ficha Catalográfica Automática</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Inserida no verso da folha de rosto (CDU / CDD)</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+<!-- Delighter Academic Tip Card -->
+<div class="w-full bg-secondary-container/40 rounded-xl p-space-md flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">lightbulb</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-label-md text-label-md font-semibold text-on-secondary-fixed">Dica de Envio para a Biblioteca</h3>
+<p class="font-body-sm text-body-sm text-on-secondary-container mt-0.5">
+        O padrão <strong>PDF/A-1b</strong> gerado garante a preservação do seu trabalho a longo prazo, cumprindo todos os requisitos de acessibilidade e legibilidade de caracteres da CAPES.
+      </p>
+</div>
+</div>
+</div>
+<!-- Fixed Bottom Floating Actions Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface/90 backdrop-blur-md px-margin-mobile py-space-sm pb-safe shadow-[0_-2px_12px_rgba(0,0,0,0.06)] flex flex-col gap-2">
+<div class="max-w-md mx-auto w-full flex flex-col gap-2">
+<!-- Primary Download Button -->
+<button class="w-full h-11 bg-primary hover:bg-on-primary-fixed-variant active:scale-[0.99] text-on-primary rounded-xl font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 shadow-sm transition-all" id="btn-download">
+<span class="material-symbols-outlined text-[22px]">download</span>
+<span>Baixar PDF Formatado (Pronto para Entrega)</span>
+</button>
+<!-- Secondary Advisor Share Button -->
+<button class="w-full h-10 bg-surface-container-lowest hover:bg-surface-container-low text-on-surface rounded-xl font-label-md text-label-md font-medium flex items-center justify-center gap-2 shadow-sm transition-all" id="btn-share">
+<span class="material-symbols-outlined text-[18px] text-secondary">group_add</span>
+<span>Compartilhar com Orientador / Coautor</span>
+</button>
+</div>
+</div>
+<!-- Micro-Interactivity Logic -->
+<script>
+  let activeTab = 0;
+  const pageMappings = [
+    { title: 'Página 1 de 84', label: 'Capa' },
+    { title: 'Página 2 de 84', label: 'Folha de Rosto' },
+    { title: 'Página 6 de 84', label: 'Sumário' },
+    { title: 'Página 15 de 84', label: 'Corpo (Texto)' }
+  ];
+
+  function switchTab(index) {
+    activeTab = index;
+    // Update tabs
+    for (let i = 0; i < 4; i++) {
+      const tab = document.getElementById(`tab-${i}`);
+      const content = document.getElementById(`sheet-content-${i}`);
+      if (i === index) {
+        tab.className = "flex-1 py-1 px-2 text-center rounded-lg bg-surface-container-lowest font-label-md text-label-md text-primary shadow-sm font-semibold transition-all";
+        content.classList.remove('hidden');
+      } else {
+        tab.className = "flex-1 py-1 px-2 text-center rounded-lg text-secondary font-label-md text-label-md hover:text-on-surface transition-all";
+        content.classList.add('hidden');
+      }
+    }
+    // Update counter label
+    document.getElementById('page-counter-label').innerText = pageMappings[index].title;
+  }
+
+  // Next / Prev buttons
+  document.getElementById('btn-next-page')?.addEventListener('click', () => {
+    activeTab = (activeTab + 1) % 4;
+    switchTab(activeTab);
+  });
+
+  document.getElementById('btn-prev-page')?.addEventListener('click', () => {
+    activeTab = (activeTab - 1 + 4) % 4;
+    switchTab(activeTab);
+  });
+
+  // Zoom Simulation
+  let zoomLevel = 85;
+  const zoomLabel = document.getElementById('zoom-label');
+  const sheet = document.getElementById('preview-sheet');
+
+  document.getElementById('btn-zoom-in')?.addEventListener('click', () => {
+    if (zoomLevel < 110) {
+      zoomLevel += 10;
+      zoomLabel.innerText = zoomLevel + '%';
+      sheet.style.transform = `scale(${zoomLevel / 85})`;
+    }
+  });
+
+  document.getElementById('btn-zoom-out')?.addEventListener('click', () => {
+    if (zoomLevel > 65) {
+      zoomLevel -= 10;
+      zoomLabel.innerText = zoomLevel + '%';
+      sheet.style.transform = `scale(${zoomLevel / 85})`;
+    }
+  });
+
+  // Download simulation feedback
+  const btnDownload = document.getElementById('btn-download');
+  btnDownload?.addEventListener('click', () => {
+    const originalText = btnDownload.innerHTML;
+    btnDownload.innerHTML = `
+      <span class="material-symbols-outlined animate-spin text-[20px]">sync</span>
+      <span>Empacotando Dissertação ABNT...</span>
+    `;
+    setTimeout(() => {
+      btnDownload.innerHTML = `
+        <span class="material-symbols-outlined text-[20px]">check_circle</span>
+        <span>Download Concluído com Sucesso!</span>
+      `;
+      setTimeout(() => {
+        btnDownload.innerHTML = originalText;
+      }, 2500);
+    }, 1200);
+  });
+
+  // Share Dialog simple feedback
+  document.getElementById('btn-share')?.addEventListener('click', () => {
+    navigator.clipboard?.writeText(window.location.href);
+    alert('Link de revisão com permissão de comentários copiado para a área de transferência!');
+  });
+</script></main></body></html>

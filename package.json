@@ -1,0 +1,10 @@
+{
+  "name": "abnt-facil-design-stitch",
+  "version": "1.0.0",
+  "description": "Protótipos de interface ABNT Fácil",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {}
+}
